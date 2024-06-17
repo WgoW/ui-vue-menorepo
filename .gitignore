@@ -1,0 +1,17 @@
+### common template
+# Exclude IntelliJ files, they will be recreated from the build files.
+.idea/*
+# But keep dictionaries to have less false positives in spellcheck inspection.
+!.idea/dictionaries
+### Vuejs template
+# Recommended template: Node.gitignore
+
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+packages/*/node_modules/
+packages/*/.idea/*
+!packages/*/.idea/dictionaries
+
