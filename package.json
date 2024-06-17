@@ -8,6 +8,7 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
+    "dev:ui-vue": "pnpm -F ui-vue run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -16,6 +17,7 @@
     "@antfu/eslint-config": "^2.19.0"
   },
   "devDependencies": {
+    "@types/node": "^18.19.34",
     "eslint": "^8.57.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
