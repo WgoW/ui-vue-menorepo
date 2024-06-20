@@ -25,8 +25,30 @@ importers:
         specifier: ^5.2.0
         version: 5.3.1(@types/node@18.19.34)
 
+  packages/tonconnect-ui-vue:
+    dependencies:
+      vue:
+        specifier: ^3.4.21
+        version: 3.4.29(typescript@5.4.5)
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.4
+        version: 5.0.5(vite@5.3.1(@types/node@18.19.34))(vue@3.4.29(typescript@5.4.5))
+      typescript:
+        specifier: ^5.2.2
+        version: 5.4.5
+      vite:
+        specifier: ^5.2.0
+        version: 5.3.1(@types/node@18.19.34)
+      vue-tsc:
+        specifier: ^2.0.6
+        version: 2.0.21(typescript@5.4.5)
+
   packages/ui-vue:
     dependencies:
+      '@tma.js/sdk':
+        specifier: ^2.5.0
+        version: 2.5.1
       vue:
         specifier: ^3.4.21
         version: 3.4.29(typescript@5.4.5)
@@ -465,6 +487,9 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.40.0'
+
+  '@tma.js/sdk@2.5.1':
+    resolution: {integrity: sha512-uUFv3oINGRwkh4KbGxMq9OxDdSQOhH9O45i9i0aqen6pIakeiIxxzrF8Yhv2xSFWrn8V+gaOpr3IDrushlo5TA==}
 
   '@types/eslint@8.56.10':
     resolution: {integrity: sha512-Shavhk87gCtY2fhXDctcfS3e6FdxWkCx1iUZ9eEUbh7rTqlZT0/IzOkCOVt0fCjcFuZ9FPYfuezTBImfHCDBGQ==}
@@ -2321,6 +2346,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@tma.js/sdk@2.5.1': {}
 
   '@types/eslint@8.56.10':
     dependencies:

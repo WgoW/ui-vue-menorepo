@@ -9,6 +9,7 @@
   "main": "index.js",
   "scripts": {
     "dev:ui-vue": "pnpm -F ui-vue run dev",
+    "dev:tonconnect-ui-vue": "pnpm -F tonconnect-ui-vue run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
