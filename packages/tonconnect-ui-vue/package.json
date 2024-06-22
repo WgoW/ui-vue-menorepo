@@ -1,18 +1,30 @@
 {
-  "name": "tonconnect-ui-vue",
+  "name": "@tonconnect/ui-vue",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
+  "files": [
+    "lib"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
   "dependencies": {
+    "@tonconnect/ui": "2.0.5",
     "vue": "^3.4.21"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "vite-plugin-dts": "^3.9.1",
     "vue-tsc": "^2.0.6"
+  },
+  "typedoc": {
+    "entryPoint": "./src/library.ts"
   }
 }

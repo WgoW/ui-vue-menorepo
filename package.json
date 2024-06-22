@@ -8,8 +8,10 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
+    "dev:demo-dapp-with-vue-ui": "pnpm -F demo-dapp-with-vue-ui run dev",
     "dev:ui-vue": "pnpm -F ui-vue run dev",
     "dev:tonconnect-ui-vue": "pnpm -F tonconnect-ui-vue run dev",
+    "build:tonconnect-ui-vue": "pnpm -F tonconnect-ui-vue run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -21,6 +23,7 @@
     "@types/node": "^18.19.34",
     "eslint": "^8.57.0",
     "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "tslib": "^2.6.3"
   }
 }
