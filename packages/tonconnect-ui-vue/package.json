@@ -19,6 +19,26 @@
     "@tonconnect/ui": "2.0.5",
     "vue": "^3.4.21"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WgoW/ui-vue-menorepo.git"
+  },
+  "homepage": "https://github.com/WgoW/ui-vue-menorepo/tree/main/packages/tonconnect-ui-vue",
+  "bugs": {
+    "url": "https://github.com/WgoW/ui-vue-menorepo/issues"
+  },
+  "keywords": [
+    "TON",
+    "Wallet",
+    "ton-connect",
+    "tonconnect",
+    "Connect",
+    "Tonkeeper",
+    "sdk",
+    "UI",
+    "Vue"
+  ],
+  "author": "golyu",
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "vite-plugin-dts": "^3.9.1",

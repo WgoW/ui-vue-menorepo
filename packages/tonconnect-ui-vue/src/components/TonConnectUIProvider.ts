@@ -77,7 +77,6 @@ export interface TonConnectUIProviderPropsBase {
 let tonConnectUI: TonConnectUI | null = null
 
 export function useProvide(options: TonConnectUiCreateOptions) {
-  console.log('useProvide', options)
   if (isClientSide() && !tonConnectUI) {
     tonConnectUI = new TonConnectUI(options)
   }
@@ -88,7 +87,6 @@ export function useProvide(options: TonConnectUiCreateOptions) {
 
 export function useInject(): Ref<TonConnectUI> {
   const result = inject<Ref<TonConnectUI> | null>(key)
-  console.log('useInject', result)
   if (!result) {
     throw new Error(`useInject must be used after useProvide`)
   }
