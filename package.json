@@ -10,8 +10,9 @@
   "scripts": {
     "dev:demo-dapp-with-vue-ui": "pnpm -F demo-dapp-with-vue-ui run dev",
     "dev:ui-vue": "pnpm -F ui-vue run dev",
-    "dev:tonconnect-ui-vue": "pnpm -F tonconnect-ui-vue run dev",
-    "build:tonconnect-ui-vue": "pnpm -F tonconnect-ui-vue run build",
+    "dev:tonconnect-ui-vue": "pnpm -F @ton-connect/ui-vue run dev",
+    "publish:tonconnect-ui-vue": "pnpm -F @ton-connect/ui-vue run publish",
+    "build:tonconnect-ui-vue": "pnpm -F @ton-connect/ui-vue build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"

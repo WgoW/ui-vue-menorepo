@@ -30,7 +30,7 @@ importers:
 
   examples/demo-dapp-with-vue-ui:
     dependencies:
-      '@tonconnect/ui-vue':
+      '@ton-connect/ui-vue':
         specifier: workspace:*
         version: link:../../packages/tonconnect-ui-vue
       vue:
@@ -44,26 +44,7 @@ importers:
         specifier: ^2.0.21
         version: 2.0.21(typescript@5.4.5)
 
-  packages/tonconnect-ui-vue:
-    dependencies:
-      '@tonconnect/ui':
-        specifier: 2.0.5
-        version: 2.0.5
-      vue:
-        specifier: ^3.4.21
-        version: 3.4.29(typescript@5.4.5)
-    devDependencies:
-      '@vitejs/plugin-vue':
-        specifier: ^5.0.4
-        version: 5.0.5(vite@5.3.1(@types/node@18.19.34))(vue@3.4.29(typescript@5.4.5))
-      vite-plugin-dts:
-        specifier: ^3.9.1
-        version: 3.9.1(@types/node@18.19.34)(rollup@4.18.0)(typescript@5.4.5)(vite@5.3.1(@types/node@18.19.34))
-      vue-tsc:
-        specifier: ^2.0.6
-        version: 2.0.21(typescript@5.4.5)
-
-  packages/ui-vue:
+  packages/tma-sdk-vue:
     dependencies:
       '@tma.js/sdk':
         specifier: ^2.5.0
@@ -84,6 +65,25 @@ importers:
       tailwindcss:
         specifier: ^3.4.3
         version: 3.4.4
+      vue-tsc:
+        specifier: ^2.0.6
+        version: 2.0.21(typescript@5.4.5)
+
+  packages/tonconnect-ui-vue:
+    dependencies:
+      '@tonconnect/ui':
+        specifier: 2.0.5
+        version: 2.0.5
+      vue:
+        specifier: ^3.4.21
+        version: 3.4.29(typescript@5.4.5)
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.4
+        version: 5.0.5(vite@5.3.1(@types/node@18.19.34))(vue@3.4.29(typescript@5.4.5))
+      vite-plugin-dts:
+        specifier: ^3.9.1
+        version: 3.9.1(@types/node@18.19.34)(rollup@4.18.0)(typescript@5.4.5)(vite@5.3.1(@types/node@18.19.34))
       vue-tsc:
         specifier: ^2.0.6
         version: 2.0.21(typescript@5.4.5)

@@ -1,10 +1,11 @@
 {
-  "name": "@tonconnect/ui-vue",
-  "private": true,
+  "name": "@ton-connect/ui-vue",
+  "private": false,
   "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "publish": "pnpm publish --access public",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },

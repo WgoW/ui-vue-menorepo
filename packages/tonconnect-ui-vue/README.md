@@ -10,7 +10,7 @@ If you want to use TonConnect on the server side, you should use the [TonConnect
 # Getting started
 
 ## Installation with npm
-`npm i @tonconnect/ui-vue`
+`npm i @ton-connect/ui-vue`
 
 # Usage
 
@@ -40,7 +40,7 @@ It is recommended to place it in the top right corner of your app.
 
 ```vue
 <script setup lang="ts">
-  import {TonConnectButton} from "@tonconnect/ui-vue"
+  import {TonConnectButton} from "@ton-connect/ui-vue"
 </script>
 
 <template>
@@ -58,7 +58,7 @@ Use it to get user's current ton wallet address. Pass boolean parameter isUserFr
 
 ```vue
 <script setup lang="ts">
-import { useTonAddress } from '@tonconnect/ui-vue';
+import { useTonAddress } from '@ton-connect/ui-vue';
 const userFriendlyAddress = useTonAddress();
 const rawAddress = useTonAddress(false);
 </script>
@@ -80,7 +80,7 @@ See all wallet's properties
 
 ```vue
 <script setup lang="ts">
-  import { useTonWallet } from '@tonconnect/ui-vue';
+  import { useTonWallet } from '@ton-connect/ui-vue';
   const wallet = useTonWallet();
 </script>
 <template>
@@ -97,7 +97,7 @@ Use this hook to access the functions for opening and closing the modal window. 
 
 ```vue
 <script setup lang="ts">
-  import { useTonConnectModal } from '@tonconnect/ui-vue';
+  import { useTonConnectModal } from '@ton-connect/ui-vue';
   const { state, open, close } = useTonConnectModal();
 </script>
 <template>
@@ -123,7 +123,7 @@ You can use it to detect when connection restoring process if finished.
 
 ```vue
 <script setup lang="ts">
-  import { useIsConnectionRestored } from '@tonconnect/ui-vue';
+  import { useIsConnectionRestored } from '@ton-connect/ui-vue';
 </script>
 <template>
   <Loader v-if="!connectionRestored">Please wait...</Loader>
@@ -200,7 +200,7 @@ You can find `ton_proof` result in the `wallet` object when wallet will be conne
 ```vue
 <script lang="ts" setup>
   import {onMounted} from "vue";
-  import useTonConnectUI from "@tonconnect/ui-vue";
+  import useTonConnectUI from "@ton-connect/ui-vue";
   const tonConnectUI = useTonConnectUI();
 
   onMounted(()=>{
